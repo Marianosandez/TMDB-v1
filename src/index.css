@@ -1,0 +1,149 @@
+@import URL('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+  background-color: #22254b;
+  color: aliceblue;
+  margin: 0;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.film-container {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.filmImg{
+  max-width: 100%; 
+}
+
+.film{
+  position: relative;
+  width: 250px;
+  margin :5px;
+  padding: 10px;
+  overflow: hidden;
+ 
+}
+.film-overview{
+  background-color: rgba(255, 255, 255, 0.832);
+  color: black;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 100%;
+  
+}
+.film:hover .film-overview{
+  transform: translateY(0%);
+  overflow: auto;
+}
+
+.itemInfo{
+  background-color: #373b69;
+  border-radius: 20px;
+}
+
+.itemInfo h3{
+  margin-top: 5px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.itemInfo p{
+  text-align: end;
+  padding-right: 10px;
+}
+
+
+.pagination{
+  margin: auto;
+  max-width: 80%;
+  margin-bottom: 20px;
+  text-align:center
+}
+
+.pagination-btn:focus{
+  background-color: #e2adf9a7;
+}
+
+.pagination-btn{
+  background-color: #03d4d4;
+}
+
+.button {
+  background: linear-gradient(rgb(11, 199, 236), rgba(0, 209, 206, 0.461));
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  ;
+  
+}
+
+.button-searchType{
+  background: linear-gradient(rgb(11, 199, 236), rgba(0, 209, 206, 0.461));
+  border: none;
+  color: white;
+  margin-top: 10px;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.button-searchType:focus{
+  background-color: aliceblue;
+}
+
+.searchBar{
+  background: rgb(255, 255, 255);
+  border: none;
+  color: rgb(141, 14, 14);
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.search-form{
+  padding-top:5% ;
+  text-align: center;
+}
+.search-form .searchBar{
+  align-content: center;
+  margin:auto;}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px
+}
+
+.button-favs{
+  background: #00a89d;
+  font-family: 'Poppins', 'sans-serif';
+  border-radius: 10px;
+}
+
+.user-form{
+  padding-top:20% ;
+  text-align: center;
+}
+.user-form .searchBar{
+  
+  align-content: center;
+  margin:auto;}
